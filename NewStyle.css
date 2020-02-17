@@ -1,0 +1,717 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: white;
+    color:black;
+    font-size:15px;
+    line-height: 1.5;
+}
+
+a{
+    color:#262626;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.Nav-btn{
+    cursor: pointer;
+    position: absolute;
+    top:35px;
+    right:30px;
+    z-index: 2;
+    display: none;
+}
+
+.container{
+    width:90%;
+    max-width: 1100px;
+    margin:auto;
+}
+
+.main-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 20px 0px;
+    font-size: 13px;
+}
+
+.main-nav .logo{
+    width: 160px;
+}
+
+.main-nav ul{
+    display: flex;
+}
+
+.main-nav ul.main-menu{
+    flex: 1;
+    margin-left: 20px;
+}
+
+.main-nav ul li{
+    padding: 0 10px;
+}
+
+.main-nav ul li a{
+    font-weight: 500;
+    padding-bottom: 3px;
+}
+
+.main-nav ul li a:hover{
+    border-bottom: 2px solid #0a6cb3;
+}
+
+.main-nav ul.main-menu li{
+    padding: 0 30px;
+}
+
+.main-nav ul.right-menu i{
+    color:#0a6cb3;
+}
+
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    border:0;
+    font-weight: bold;
+    padding:10px 20px;
+    background: #0a6cb3; 
+    color:white;
+}
+
+.btn:hover{
+    opacity: 0.9;
+    transition: 0.5s;
+}
+
+.showcase{
+    width: 100%;
+    height: 580px;
+    background: url('scenic-photo-of-aurora-during-evening-3573603.jpg') no-repeat center center/cover;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 50px;
+    margin-bottom: 20px; */
+}
+
+.showcase .content{
+    width: 50%;
+    padding:250px 0 0 30px;
+}
+
+.showcase .content h2{
+    font-size: 40px;
+}
+
+.showcase .content h2,.showcase .content p{
+    color:white;
+    margin-bottom: 20px;
+}
+
+.showcase .content .btn{
+    margin-top:20px;
+}
+
+.headings{
+    text-align: center;
+    padding: 140px 100px 130px 100px;
+}
+
+.headings h2{
+    font-size: 16px;
+    color:#0a6cb3;
+}
+
+.headings p{
+    font-size:40px;
+}
+
+
+.home-cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+}
+
+
+.home-cards div{
+    background: #fafafa;
+    padding:8px 20px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.home-cards div:hover{
+    background: #0a6cb3;
+    transition: 0.5s;
+}
+
+.home-cards div h3, .home-cards div p{
+    padding-bottom: 20px;
+}
+
+.home-cards div:hover h3,.home-cards div:hover p{
+    color:white;
+    transition: 0.5s;
+}
+
+.home-cards div:hover i{
+    background:white;
+    color:#0a6cb3;
+    transition: 0.5s;
+
+}
+/* .home-cards div:hover h3,.home-cards div:hover div{
+    background: #0a6cb3;
+    color:white;
+} */
+
+
+.home-cards div i{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding:20px;
+    background: #0a6cb3;
+    color:white;
+    border-radius: 50%;
+    box-shadow: 0 4px 20px -5px rgba(66,133,244,.4);
+}
+
+.About{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+    grid-gap: 80px;
+}
+
+.About div img{
+    width: 100%;
+    height: 100%;
+}
+
+.About div h4,.About div p{
+    padding-bottom: 20px;
+
+}
+
+.About div h4{
+    color:#0a6cb3
+}
+
+.About div ul li{
+    margin-bottom: 10px;
+}
+
+.About div ul li i{
+    padding-right: 10px;
+    color:#29ED81;
+}
+
+.PricingCards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px; 
+}
+
+.PricingCards div h3,.PricingCards div p{
+    text-align: center;
+}
+
+.PricingCards div{
+    border:1px solid #d3d3d3;
+    padding:20px;
+    cursor: pointer;
+    border-radius:4px;
+    padding:30px 60px;
+}
+
+.PricingCards div:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.PricingCards div h3{
+    color:#0a6cb3;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.PricingCards div ul{
+    padding-bottom: 20px;
+}
+
+
+.PricingCards div p{
+    font-size: 24px;
+    padding-bottom: 50px;
+}
+
+.PricingCards div ul li h5{
+    color:#6c757d;
+    font-weight: normal;
+    font-size: 15px;  
+    padding-bottom: 10px;
+}
+
+.PricingCards div ul li{
+    padding-bottom: 10px;
+    color:#6c757d;
+}
+
+.PricingCards div a{
+    padding:15px 50px;
+    margin-bottom: 10px;
+    background: #0a6cb3;
+    font-size: 14px;
+    color:white;
+    width: 100%;
+    border:1px solid #0a6cb3;
+    box-shadow: 0 4px 20px -5px rgba(66,133,244,.4);
+}
+
+
+.PricingCards button{
+    width: 100%;
+    background: #0a6cb3;
+    padding: 15px 0px;
+   border: 1px solid #0a6cb3; 
+   box-shadow: 0 4px 20px -5px rgba(66,133,244,.4);
+   color:White;
+}
+
+.Faq{
+    padding-bottom: 120px;
+}
+
+.Faq #accordion .faqDescrption{   
+    margin-bottom: 20px;
+    border:1px solid #d3d3d3;
+    padding:20px 20px;
+    height: auto;
+    border-radius: 4px;
+    color:#6c757d;
+}
+
+.Faq #accordion .faqheader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+    padding:16px 0px;
+    cursor: pointer;
+    border:1px solid #d3d3d3;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.Faq #accordion .faqheader h3{
+    flex:1;
+    padding-left: 30px;
+    font-size: 16px;
+}
+
+.Faq #accordion .faqheader i{
+    padding-right: 30px;
+    font-size: 16px;
+}
+
+/* .Faq #accordion h3{
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    border: 1px solid #d3d3d3;
+    padding:15px 20px;
+} */
+
+.Faq #accordion div:focus,.Faq #accordion div.active{
+    background: #0a6cb3;
+    outline: 0;
+    box-shadow: 0 4px 20px -5px rgba(66,133,244,.4);
+    color: white;
+}
+
+/* links */
+
+
+.links{
+    background: #10161C;
+    padding:35px 0;
+}
+
+.links-inner{
+    max-width: 1250px;
+    margin: 0 auto;
+    padding:0 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.links-inner ul li{
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+
+.links-inner ul li img{
+    width: 150px;
+}
+
+.links-inner ul li h3{
+    color:white;
+}
+
+.links-inner ul#ContactDetails li{
+    text-align: left;
+    color:white;
+}
+
+.links-inner ul li a{
+    color:white;
+    text-align: center;
+    font-size: 13px;
+}
+
+.links-inner ul li ul{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.links-inner ul li ul li i{
+    padding:15px 18px;
+    border:1px solid white;
+    border-radius:50%;
+    font-size: 16px;
+    
+}
+
+.links-inner ul li ul li i:hover{
+    background: #0a6cb3;
+    transition: 0.4s;
+    color:white;
+}
+
+/* .links-inner ul li ul li i.fab.fa-instagram:hover{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    transition: 0.9s;
+    color:white;
+} */
+
+.footer{
+    /* background: #17202A; */
+    background: #10161C;
+    padding: 35px 0px;
+}
+
+.footer-inner{
+    max-width: 1420px;
+    margin: 0 auto;
+    padding:30px 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.footer-inner ul.footerNav{
+    display: flex;
+    flex: 1;
+}
+.footer-inner ul.footerNav li a{
+    padding-right: 80px;
+    color: #d3d3d3;
+}
+
+.footer-inner ul.copyright li{
+    text-align: end;
+    color:#f3f3f3;
+    font-size: 16px;
+}
+
+.OpacityAnim {visibility:hidden;}
+
+.ShowcaseOpacity {
+    animation-name: visibleeffect;
+    -webkit-animation-name: visibleeffect;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+
+  .contentSlide{
+      visibility: hidden;
+  }
+
+.slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+
+.slidecontent{
+    animation-name: contentslider;
+    -webkit-animation-name: contentslider;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+}
+
+
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+        transition: 0.10s;
+        opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+@keyframes visibleeffect{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transition: 0.6s;
+    }
+}
+
+@keyframes contentslider{
+    0%{
+        opacity: 0;
+        transform: translateX(70%);
+    }
+    100%{
+        opacity: 1;
+        transition: 0.5s;
+        transform: translateX(0%);
+    }
+}
+
+@media(max-width:767px){
+    .Nav-btn{
+        display: block;
+    }
+    .Nav-btn:hover{
+        opacity: 0.5;
+    }
+
+    .main-nav ul.main-menu{
+        display: block;
+        position: absolute;
+        top:0;
+        left:0;
+        background: #f2f2f2;
+        width: 50%;
+        height: 100%;
+        border-right:#ccc 1px solid;
+        opacity: 0.9;
+        padding: 30px;
+        transform: translateX(-500px);
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .main-nav ul.right-menu{
+        display: flex;
+        flex-direction: column;
+        margin-right: 60px;
+    }
+
+    .main-nav ul.main-menu li{
+        padding: 10px;
+        border-bottom: #ccc solid 1px;
+        font-size: 15px;
+    }
+
+    .main-nav ul.main-menu li:last-child{
+        border-bottom: 0;
+    }
+
+.main-nav ul.main-menu.show{
+    transform: translateX(-20px);
+}
+
+ .showcase p{
+     display: none;
+ }
+ .showcase .content{
+     width: 100%;
+     text-align: center;
+padding: 200px 30px;
+    }
+ .showcase h2{
+     margin-bottom: 5px;
+ }
+    .home-cards{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .home-cards div{
+        padding:40px 70px;
+    }
+    .headings{
+        padding:140px 50px 60px 50px;
+    }
+    .About{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .PricingCards{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .PricingCards div:hover{
+        transform:none;
+    }
+
+    .links .links-inner{
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 140px;
+        text-align: left;
+        padding-left: 100px;
+    }
+
+    .footer .footer-inner{
+        grid-template-columns: repeat(1,1fr);
+        text-align: center;
+    }
+
+    .footer-inner ul.footerNav{
+     flex:none;
+     text-align: center;
+     justify-content: center;
+    }
+    .footer-inner ul.footerNav li a {
+        text-align: center;
+        padding-right: 20px;
+    }
+
+    .footer-inner ul.copyright li{
+        text-align: center;
+    }
+}
+
+
+@media(min-width:768px) and (max-width:1025px){
+    
+    html,body{height:100%;}
+    .main-nav ul.main-menu{height:100%;}
+    
+    .Nav-btn{
+        display: block;
+    }
+    .Nav-btn:hover{
+        opacity: 0.5;
+    }
+
+    .main-nav ul.main-menu{
+        display: block;
+        position: absolute;
+        top:0;
+        left:0;
+        background: #f2f2f2;
+        width: 50%;
+        /* height: 100%; */
+        border-right:#ccc 1px solid;
+        opacity: 0.9;
+        padding: 40px 70px;
+        transform: translateX(-520px);
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .main-nav ul.right-menu{
+        margin-right: 50px;
+    }
+
+    .main-nav ul.main-menu li{
+        padding: 10px;
+        border-bottom: #ccc solid 1px;
+        font-size: 15px;
+    }
+
+    .main-nav ul.main-menu li:last-child{
+        border-bottom: 0;
+    }
+
+.main-nav ul.main-menu.show{
+    transform: translateX(-20px);
+}
+
+ .showcase p{
+     display: none;
+ }
+ .showcase .content{
+     width: 100%;
+     text-align: center;
+padding: 200px 30px;
+    }
+ .showcase h2{
+     margin-bottom: 5px;
+ }
+    .home-cards{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .home-cards div{
+        padding:30px 100px;
+    }
+    .headings{
+        padding:140px 50px 200px 50px;
+    }
+    .About{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .PricingCards{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .PricingCards div:hover{
+        transform:none;
+    }
+
+    .links .links-inner{
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 140px;
+        text-align: left;
+        padding-left: 100px;
+    }
+
+    .footer .footer-inner{
+        grid-template-columns: repeat(1,1fr);
+        text-align: center;
+    }
+
+    .footer-inner ul.footerNav{
+     flex:none;
+     text-align: center;
+     justify-content: center;
+    }
+    .footer-inner ul.footerNav li a {
+        text-align: center;
+        padding-right: 20px;
+    }
+
+    .footer-inner ul.copyright li{
+        text-align: center;
+    }
+
+}
